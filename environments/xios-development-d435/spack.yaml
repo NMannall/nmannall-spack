@@ -1,0 +1,22 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+spack:
+  # add package specs to the `specs` list
+  specs:
+  - fargparse
+  - gftl-shared
+  - pfunit+mpi+openmp
+  - py-jinja2
+  - py-psyclone
+  - rose-picker
+  - xios
+  - yaxt
+  view: true
+  concretizer:
+    unify: true
+  develop:
+    xios:
+      spec: xios@=devel
+      path: /work/d435/d435/d435nm/software/XIOS/spack
